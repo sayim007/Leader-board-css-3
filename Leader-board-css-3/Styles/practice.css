@@ -80,9 +80,24 @@ hr{
 }
 /* letest courses style */
 
-.courses .cours .course-banner img{
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 53px;
+    justify-items: center;
+}
+.course{
+    width: 252.42px;
+    height: 269.79px;
+    filter: drop-shadow(0 0 0.75rem gray);
+    
+}
+.courses .course .course-banner img{
     width: 224px;
     height: 104px;
+}
+.course-detail{
+    margin-left: 5px;
 }
 .course-title{
 font-size: 20.03px;
@@ -114,13 +129,16 @@ p{
 .course-duration{
     background-color:  #FFE4E8;
     color: #FF4A60;
+    font-size:14.69px;
     width: 90px;
     height: 29.38px;
-    border-radius: 14.6913px;
+    border-radius: 25px;
     padding-left: 10px;
     padding-top: 3px;
 
 }
 .fa-clock{
     margin-right: 5px;
+    margin-top: 5px;
 }
+
